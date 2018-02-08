@@ -8,7 +8,6 @@
 //Model
 
 //Other
-#import "Masonry.h"
 
 @interface JCChoosePhoneView ()
 
@@ -24,9 +23,9 @@
 
 #pragma mark - Init Method
 
-- (instancetype)init {
+- (instancetype)initWithFrame:(CGRect)frame {
     
-    if (self = [super init]) {
+    if (self = [super initWithFrame:frame]) {
         
         [self initData];
         [self lazyCreateUI];
@@ -59,15 +58,8 @@
 
 - (void)layoutSubview {
     
-    [_bgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_offset(UIEdgeInsetsZero);
-    }];
-    
-    [_chooseImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(240, 240));
-        make.centerX.equalTo(_bgView);
-        make.bottom.equalTo(_bgView).offset(-30);
-    }];
+    _bgView.frame = self.bounds;
+    _chooseImageView.frame = CGRectMake((self.frame.size.width - 240) / 2, self.frame.size.height - 240 - 30, 240, 240);
 }
 
 #pragma mark - Config Data
@@ -91,25 +83,15 @@
 - (void)configTheUIWithArray:(NSArray *)array {
 
     [array enumerateObjectsUsingBlock:^(NSString *btnTitle, NSUInteger idx, BOOL * _Nonnull stop) {
+        
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = CGRectMake(50, 30 + 90 * idx , _bgView.frame.size.width - 50 * 2, 60);
         btn.backgroundColor = [UIColor blueColor];
         [btn setTitle:btnTitle forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         btn.tag = 123 + idx;
         [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
         [_bgView addSubview:btn];
-        
-        [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(_bgView);
-            make.left.equalTo(_bgView).mas_equalTo(50);
-            make.height.mas_equalTo(60);
-            if (idx == 0) {
-                make.top.equalTo(_bgView).mas_equalTo(30);
-            }else{
-                UIButton *oldBtn = [_bgView viewWithTag:123 + idx - 1];
-                make.top.equalTo(oldBtn.mas_bottom).offset(30);
-            }
-        }];
     }];
 }
 

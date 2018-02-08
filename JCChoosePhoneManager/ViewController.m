@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "JCChoosePhoneManager.h"
 #import "JCChoosePhoneView.h"
-#import "Masonry.h"
 #import "JCCustomChooseView.h"
 
 @interface ViewController ()
@@ -25,9 +24,6 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.choosePhoneView];
-    [_choosePhoneView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_offset(UIEdgeInsetsZero);
-    }];
     
     // 设置自定义选择框(不设置则为系统)
     [[JCChoosePhoneManager showChoosePhoneManager] configCustomChooseView:self.customChooseView];
@@ -112,7 +108,7 @@
 
 - (JCChoosePhoneView *)choosePhoneView {
     if (!_choosePhoneView) {
-        _choosePhoneView = [[JCChoosePhoneView alloc] init];
+        _choosePhoneView = [[JCChoosePhoneView alloc] initWithFrame:self.view.bounds];
     }
     return _choosePhoneView;
 }
