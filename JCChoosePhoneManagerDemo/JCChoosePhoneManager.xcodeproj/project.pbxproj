@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18EF2D7A202C39A400CF3165 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2D79202C39A400CF3165 /* AppDelegate.m */; };
+		18EF2D7D202C39A400CF3165 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2D7C202C39A400CF3165 /* ViewController.m */; };
+		18EF2D80202C39A400CF3165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EF2D7E202C39A400CF3165 /* Main.storyboard */; };
+		18EF2D82202C39A400CF3165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EF2D81202C39A400CF3165 /* Assets.xcassets */; };
+		18EF2D85202C39A400CF3165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EF2D83202C39A400CF3165 /* LaunchScreen.storyboard */; };
+		18EF2D88202C39A400CF3165 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2D87202C39A400CF3165 /* main.m */; };
+		18EF2D92202C39A400CF3165 /* JCChoosePhoneManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2D91202C39A400CF3165 /* JCChoosePhoneManagerTests.m */; };
+		18EF2D9D202C39A400CF3165 /* JCChoosePhoneManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2D9C202C39A400CF3165 /* JCChoosePhoneManagerUITests.m */; };
+		18EF2DB7202C3A1200CF3165 /* JCChoosePhoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2DAB202C3A1100CF3165 /* JCChoosePhoneManager.m */; };
+		18EF2DB9202C3A1200CF3165 /* JCVPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2DB2202C3A1100CF3165 /* JCVPImageCropperViewController.m */; };
+		18EF2DBA202C3A1200CF3165 /* JCChoosePhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2DB3202C3A1100CF3165 /* JCChoosePhoneView.m */; };
+		18EF2DBB202C3A1200CF3165 /* JCCustomChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2DB5202C3A1200CF3165 /* JCCustomChooseView.m */; };
+		18EF2DC3202C3F5A00CF3165 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2DC2202C3F5900CF3165 /* Aspects.m */; };
+		1F8474EEC7B6559FCC6A6A6F /* libPods-JCChoosePhoneManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A09741636627A7F8583AF9 /* libPods-JCChoosePhoneManagerUITests.a */; };
+		258A7730EC1CC532D416FA18 /* libPods-JCChoosePhoneManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F417582169055AE58CE9B83 /* libPods-JCChoosePhoneManagerTests.a */; };
+		3454D7C2E25F11B761B2EA61 /* libPods-JCChoosePhoneManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5F653E74D972BCC4B2096F /* libPods-JCChoosePhoneManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18EF2D8E202C39A400CF3165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EF2D6D202C39A400CF3165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18EF2D74202C39A400CF3165;
+			remoteInfo = JCChoosePhoneManager;
+		};
+		18EF2D99202C39A400CF3165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18EF2D6D202C39A400CF3165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18EF2D74202C39A400CF3165;
+			remoteInfo = JCChoosePhoneManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18EF2D75202C39A400CF3165 /* JCChoosePhoneManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCChoosePhoneManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EF2D78202C39A400CF3165 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18EF2D79202C39A400CF3165 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18EF2D7B202C39A400CF3165 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18EF2D7C202C39A400CF3165 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18EF2D7F202C39A400CF3165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18EF2D81202C39A400CF3165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18EF2D84202C39A400CF3165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18EF2D86202C39A400CF3165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EF2D87202C39A400CF3165 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18EF2D8D202C39A400CF3165 /* JCChoosePhoneManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCChoosePhoneManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EF2D91202C39A400CF3165 /* JCChoosePhoneManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCChoosePhoneManagerTests.m; sourceTree = "<group>"; };
+		18EF2D93202C39A400CF3165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EF2D98202C39A400CF3165 /* JCChoosePhoneManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCChoosePhoneManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EF2D9C202C39A400CF3165 /* JCChoosePhoneManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCChoosePhoneManagerUITests.m; sourceTree = "<group>"; };
+		18EF2D9E202C39A400CF3165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EF2DAB202C3A1100CF3165 /* JCChoosePhoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCChoosePhoneManager.m; sourceTree = "<group>"; };
+		18EF2DAC202C3A1100CF3165 /* JCCustomChooseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCustomChooseProtocol.h; sourceTree = "<group>"; };
+		18EF2DAD202C3A1100CF3165 /* JCVPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCVPImageCropperViewController.h; sourceTree = "<group>"; };
+		18EF2DAE202C3A1100CF3165 /* JCChoosePhoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCChoosePhoneManager.h; sourceTree = "<group>"; };
+		18EF2DB2202C3A1100CF3165 /* JCVPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCVPImageCropperViewController.m; sourceTree = "<group>"; };
+		18EF2DB3202C3A1100CF3165 /* JCChoosePhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCChoosePhoneView.m; path = JCChoosePhoneManager/JCChoosePhoneView.m; sourceTree = "<group>"; };
+		18EF2DB4202C3A1200CF3165 /* JCCustomChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCustomChooseView.h; sourceTree = "<group>"; };
+		18EF2DB5202C3A1200CF3165 /* JCCustomChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCustomChooseView.m; sourceTree = "<group>"; };
+		18EF2DB6202C3A1200CF3165 /* JCChoosePhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCChoosePhoneView.h; path = JCChoosePhoneManager/JCChoosePhoneView.h; sourceTree = "<group>"; };
+		18EF2DC1202C3F5900CF3165 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		18EF2DC2202C3F5900CF3165 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		35A09741636627A7F8583AF9 /* libPods-JCChoosePhoneManagerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCChoosePhoneManagerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0F9CCF24022054ADF033AD /* Pods-JCChoosePhoneManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManagerUITests/Pods-JCChoosePhoneManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5423FA71792372ED14BF7F7C /* Pods-JCChoosePhoneManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManager/Pods-JCChoosePhoneManager.debug.xcconfig"; sourceTree = "<group>"; };
+		5C6E1583E402126D1A638382 /* Pods-JCChoosePhoneManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManagerUITests/Pods-JCChoosePhoneManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F417582169055AE58CE9B83 /* libPods-JCChoosePhoneManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCChoosePhoneManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9D5208B40958F063AA466E /* Pods-JCChoosePhoneManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManagerTests/Pods-JCChoosePhoneManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDC3C9A5517DA04DBA4DEC35 /* Pods-JCChoosePhoneManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManager/Pods-JCChoosePhoneManager.release.xcconfig"; sourceTree = "<group>"; };
+		EE5F653E74D972BCC4B2096F /* libPods-JCChoosePhoneManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCChoosePhoneManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11BBEEC2FC606D8804D59B4 /* Pods-JCChoosePhoneManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManagerTests/Pods-JCChoosePhoneManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18EF2D72202C39A400CF3165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3454D7C2E25F11B761B2EA61 /* libPods-JCChoosePhoneManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EF2D8A202C39A400CF3165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258A7730EC1CC532D416FA18 /* libPods-JCChoosePhoneManagerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EF2D95202C39A400CF3165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8474EEC7B6559FCC6A6A6F /* libPods-JCChoosePhoneManagerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B33467AB88D3BAF80FFA166 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5423FA71792372ED14BF7F7C /* Pods-JCChoosePhoneManager.debug.xcconfig */,
+				EDC3C9A5517DA04DBA4DEC35 /* Pods-JCChoosePhoneManager.release.xcconfig */,
+				F11BBEEC2FC606D8804D59B4 /* Pods-JCChoosePhoneManagerTests.debug.xcconfig */,
+				BB9D5208B40958F063AA466E /* Pods-JCChoosePhoneManagerTests.release.xcconfig */,
+				4F0F9CCF24022054ADF033AD /* Pods-JCChoosePhoneManagerUITests.debug.xcconfig */,
+				5C6E1583E402126D1A638382 /* Pods-JCChoosePhoneManagerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		18EF2D6C202C39A400CF3165 = {
+			isa = PBXGroup;
+			children = (
+				18EF2DAA202C3A1100CF3165 /* JCChoosePhoneManager */,
+				18EF2DC0202C3F5900CF3165 /* Aspects */,
+				18EF2D77202C39A400CF3165 /* JCChoosePhoneManager */,
+				18EF2DB6202C3A1200CF3165 /* JCChoosePhoneView.h */,
+				18EF2DB3202C3A1100CF3165 /* JCChoosePhoneView.m */,
+				18EF2D90202C39A400CF3165 /* JCChoosePhoneManagerTests */,
+				18EF2D9B202C39A400CF3165 /* JCChoosePhoneManagerUITests */,
+				18EF2D76202C39A400CF3165 /* Products */,
+				0B33467AB88D3BAF80FFA166 /* Pods */,
+				B5EE9D3B78EA9D89035F73DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18EF2D76202C39A400CF3165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18EF2D75202C39A400CF3165 /* JCChoosePhoneManager.app */,
+				18EF2D8D202C39A400CF3165 /* JCChoosePhoneManagerTests.xctest */,
+				18EF2D98202C39A400CF3165 /* JCChoosePhoneManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18EF2D77202C39A400CF3165 /* JCChoosePhoneManager */ = {
+			isa = PBXGroup;
+			children = (
+				18EF2D78202C39A400CF3165 /* AppDelegate.h */,
+				18EF2D79202C39A400CF3165 /* AppDelegate.m */,
+				18EF2D7B202C39A400CF3165 /* ViewController.h */,
+				18EF2D7C202C39A400CF3165 /* ViewController.m */,
+				18EF2D7E202C39A400CF3165 /* Main.storyboard */,
+				18EF2D81202C39A400CF3165 /* Assets.xcassets */,
+				18EF2D83202C39A400CF3165 /* LaunchScreen.storyboard */,
+				18EF2D86202C39A400CF3165 /* Info.plist */,
+				18EF2D87202C39A400CF3165 /* main.m */,
+			);
+			path = JCChoosePhoneManager;
+			sourceTree = "<group>";
+		};
+		18EF2D90202C39A400CF3165 /* JCChoosePhoneManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				18EF2D91202C39A400CF3165 /* JCChoosePhoneManagerTests.m */,
+				18EF2D93202C39A400CF3165 /* Info.plist */,
+			);
+			path = JCChoosePhoneManagerTests;
+			sourceTree = "<group>";
+		};
+		18EF2D9B202C39A400CF3165 /* JCChoosePhoneManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18EF2D9C202C39A400CF3165 /* JCChoosePhoneManagerUITests.m */,
+				18EF2D9E202C39A400CF3165 /* Info.plist */,
+			);
+			path = JCChoosePhoneManagerUITests;
+			sourceTree = "<group>";
+		};
+		18EF2DAA202C3A1100CF3165 /* JCChoosePhoneManager */ = {
+			isa = PBXGroup;
+			children = (
+				18EF2DAE202C3A1100CF3165 /* JCChoosePhoneManager.h */,
+				18EF2DAB202C3A1100CF3165 /* JCChoosePhoneManager.m */,
+				18EF2DAC202C3A1100CF3165 /* JCCustomChooseProtocol.h */,
+				18EF2DAD202C3A1100CF3165 /* JCVPImageCropperViewController.h */,
+				18EF2DB2202C3A1100CF3165 /* JCVPImageCropperViewController.m */,
+				18EF2DB4202C3A1200CF3165 /* JCCustomChooseView.h */,
+				18EF2DB5202C3A1200CF3165 /* JCCustomChooseView.m */,
+			);
+			name = JCChoosePhoneManager;
+			path = JCChoosePhoneManager/JCChoosePhoneManager;
+			sourceTree = "<group>";
+		};
+		18EF2DC0202C3F5900CF3165 /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				18EF2DC1202C3F5900CF3165 /* Aspects.h */,
+				18EF2DC2202C3F5900CF3165 /* Aspects.m */,
+			);
+			name = Aspects;
+			path = JCChoosePhoneManager/Aspects;
+			sourceTree = "<group>";
+		};
+		B5EE9D3B78EA9D89035F73DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE5F653E74D972BCC4B2096F /* libPods-JCChoosePhoneManager.a */,
+				6F417582169055AE58CE9B83 /* libPods-JCChoosePhoneManagerTests.a */,
+				35A09741636627A7F8583AF9 /* libPods-JCChoosePhoneManagerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18EF2D74202C39A400CF3165 /* JCChoosePhoneManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EF2DA1202C39A400CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManager" */;
+			buildPhases = (
+				70A1F4A8E57293C0177CCCFB /* [CP] Check Pods Manifest.lock */,
+				18EF2D71202C39A400CF3165 /* Sources */,
+				18EF2D72202C39A400CF3165 /* Frameworks */,
+				18EF2D73202C39A400CF3165 /* Resources */,
+				3CE5BEBF171B606B061419C8 /* [CP] Embed Pods Frameworks */,
+				10DDF3FA33AE07C7C31FE96E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCChoosePhoneManager;
+			productName = JCChoosePhoneManager;
+			productReference = 18EF2D75202C39A400CF3165 /* JCChoosePhoneManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18EF2D8C202C39A400CF3165 /* JCChoosePhoneManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EF2DA4202C39A400CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManagerTests" */;
+			buildPhases = (
+				3FE3A05E5987AEE0E4360986 /* [CP] Check Pods Manifest.lock */,
+				18EF2D89202C39A400CF3165 /* Sources */,
+				18EF2D8A202C39A400CF3165 /* Frameworks */,
+				18EF2D8B202C39A400CF3165 /* Resources */,
+				6D5B26902EA9691AF4C48CAF /* [CP] Embed Pods Frameworks */,
+				8B9292E4F73200E377A03E4B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18EF2D8F202C39A400CF3165 /* PBXTargetDependency */,
+			);
+			name = JCChoosePhoneManagerTests;
+			productName = JCChoosePhoneManagerTests;
+			productReference = 18EF2D8D202C39A400CF3165 /* JCChoosePhoneManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18EF2D97202C39A400CF3165 /* JCChoosePhoneManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EF2DA7202C39A400CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManagerUITests" */;
+			buildPhases = (
+				0E64DBAB0053BCA6F5358098 /* [CP] Check Pods Manifest.lock */,
+				18EF2D94202C39A400CF3165 /* Sources */,
+				18EF2D95202C39A400CF3165 /* Frameworks */,
+				18EF2D96202C39A400CF3165 /* Resources */,
+				B6B225750908780C014BB99B /* [CP] Embed Pods Frameworks */,
+				A1ED50DA0DEFF25473BC45AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18EF2D9A202C39A400CF3165 /* PBXTargetDependency */,
+			);
+			name = JCChoosePhoneManagerUITests;
+			productName = JCChoosePhoneManagerUITests;
+			productReference = 18EF2D98202C39A400CF3165 /* JCChoosePhoneManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18EF2D6D202C39A400CF3165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jindashi;
+				TargetAttributes = {
+					18EF2D74202C39A400CF3165 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					18EF2D8C202C39A400CF3165 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18EF2D74202C39A400CF3165;
+					};
+					18EF2D97202C39A400CF3165 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18EF2D74202C39A400CF3165;
+					};
+				};
+			};
+			buildConfigurationList = 18EF2D70202C39A400CF3165 /* Build configuration list for PBXProject "JCChoosePhoneManager" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18EF2D6C202C39A400CF3165;
+			productRefGroup = 18EF2D76202C39A400CF3165 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18EF2D74202C39A400CF3165 /* JCChoosePhoneManager */,
+				18EF2D8C202C39A400CF3165 /* JCChoosePhoneManagerTests */,
+				18EF2D97202C39A400CF3165 /* JCChoosePhoneManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18EF2D73202C39A400CF3165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EF2D85202C39A400CF3165 /* LaunchScreen.storyboard in Resources */,
+				18EF2D82202C39A400CF3165 /* Assets.xcassets in Resources */,
+				18EF2D80202C39A400CF3165 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EF2D8B202C39A400CF3165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EF2D96202C39A400CF3165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E64DBAB0053BCA6F5358098 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCChoosePhoneManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10DDF3FA33AE07C7C31FE96E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManager/Pods-JCChoosePhoneManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CE5BEBF171B606B061419C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManager/Pods-JCChoosePhoneManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE3A05E5987AEE0E4360986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCChoosePhoneManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D5B26902EA9691AF4C48CAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManagerTests/Pods-JCChoosePhoneManagerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70A1F4A8E57293C0177CCCFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCChoosePhoneManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B9292E4F73200E377A03E4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManagerTests/Pods-JCChoosePhoneManagerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1ED50DA0DEFF25473BC45AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManagerUITests/Pods-JCChoosePhoneManagerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B225750908780C014BB99B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManagerUITests/Pods-JCChoosePhoneManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18EF2D71202C39A400CF3165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EF2DB7202C3A1200CF3165 /* JCChoosePhoneManager.m in Sources */,
+				18EF2D7D202C39A400CF3165 /* ViewController.m in Sources */,
+				18EF2DBB202C3A1200CF3165 /* JCCustomChooseView.m in Sources */,
+				18EF2D88202C39A400CF3165 /* main.m in Sources */,
+				18EF2DB9202C3A1200CF3165 /* JCVPImageCropperViewController.m in Sources */,
+				18EF2DBA202C3A1200CF3165 /* JCChoosePhoneView.m in Sources */,
+				18EF2D7A202C39A400CF3165 /* AppDelegate.m in Sources */,
+				18EF2DC3202C3F5A00CF3165 /* Aspects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EF2D89202C39A400CF3165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EF2D92202C39A400CF3165 /* JCChoosePhoneManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18EF2D94202C39A400CF3165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EF2D9D202C39A400CF3165 /* JCChoosePhoneManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18EF2D8F202C39A400CF3165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18EF2D74202C39A400CF3165 /* JCChoosePhoneManager */;
+			targetProxy = 18EF2D8E202C39A400CF3165 /* PBXContainerItemProxy */;
+		};
+		18EF2D9A202C39A400CF3165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18EF2D74202C39A400CF3165 /* JCChoosePhoneManager */;
+			targetProxy = 18EF2D99202C39A400CF3165 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18EF2D7E202C39A400CF3165 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18EF2D7F202C39A400CF3165 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18EF2D83202C39A400CF3165 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18EF2D84202C39A400CF3165 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18EF2D9F202C39A400CF3165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18EF2DA0202C39A400CF3165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18EF2DA2202C39A400CF3165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5423FA71792372ED14BF7F7C /* Pods-JCChoosePhoneManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44X7HG8552;
+				INFOPLIST_FILE = JCChoosePhoneManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = monopoly.game.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18EF2DA3202C39A400CF3165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC3C9A5517DA04DBA4DEC35 /* Pods-JCChoosePhoneManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44X7HG8552;
+				INFOPLIST_FILE = JCChoosePhoneManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = monopoly.game.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18EF2DA5202C39A400CF3165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11BBEEC2FC606D8804D59B4 /* Pods-JCChoosePhoneManagerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JCChoosePhoneManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.JCChoosePhoneManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCChoosePhoneManager.app/JCChoosePhoneManager";
+			};
+			name = Debug;
+		};
+		18EF2DA6202C39A400CF3165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB9D5208B40958F063AA466E /* Pods-JCChoosePhoneManagerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JCChoosePhoneManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.JCChoosePhoneManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCChoosePhoneManager.app/JCChoosePhoneManager";
+			};
+			name = Release;
+		};
+		18EF2DA8202C39A400CF3165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0F9CCF24022054ADF033AD /* Pods-JCChoosePhoneManagerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JCChoosePhoneManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.JCChoosePhoneManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JCChoosePhoneManager;
+			};
+			name = Debug;
+		};
+		18EF2DA9202C39A400CF3165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6E1583E402126D1A638382 /* Pods-JCChoosePhoneManagerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JCChoosePhoneManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.JCChoosePhoneManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JCChoosePhoneManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18EF2D70202C39A400CF3165 /* Build configuration list for PBXProject "JCChoosePhoneManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EF2D9F202C39A400CF3165 /* Debug */,
+				18EF2DA0202C39A400CF3165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EF2DA1202C39A400CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EF2DA2202C39A400CF3165 /* Debug */,
+				18EF2DA3202C39A400CF3165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EF2DA4202C39A400CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EF2DA5202C39A400CF3165 /* Debug */,
+				18EF2DA6202C39A400CF3165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EF2DA7202C39A400CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EF2DA8202C39A400CF3165 /* Debug */,
+				18EF2DA9202C39A400CF3165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18EF2D6D202C39A400CF3165 /* Project object */;
+}
