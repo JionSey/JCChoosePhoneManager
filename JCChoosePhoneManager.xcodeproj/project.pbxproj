@@ -19,7 +19,9 @@
 		18EF2E10202C535100CF3165 /* JCChoosePhoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2E08202C535100CF3165 /* JCChoosePhoneManager.m */; };
 		18EF2E11202C535100CF3165 /* JCCustomChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2E0C202C535100CF3165 /* JCCustomChooseView.m */; };
 		18EF2E12202C535100CF3165 /* JCVPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2E0E202C535100CF3165 /* JCVPImageCropperViewController.m */; };
-		18EF2E16202C536900CF3165 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF2E15202C536900CF3165 /* Aspects.m */; };
+		48EDBF704631C2554924AC14 /* libPods-JCChoosePhoneManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED60514530B9DAECFB98FFE /* libPods-JCChoosePhoneManager.a */; };
+		72788BC1604B55A122A503DA /* libPods-JCChoosePhoneManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9544781FED4366AB5981EB /* libPods-JCChoosePhoneManagerTests.a */; };
+		9866CFB1ECBE228C012C91C3 /* libPods-JCChoosePhoneManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4A451259E4B797366C72CA /* libPods-JCChoosePhoneManagerUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D748EE043380FE455AC06A /* Pods-JCChoosePhoneManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManagerTests/Pods-JCChoosePhoneManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		0D8846FC4CAD0A678EDB36DA /* Pods-JCChoosePhoneManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManager/Pods-JCChoosePhoneManager.release.xcconfig"; sourceTree = "<group>"; };
 		18EF2DD0202C52FA00CF3165 /* JCChoosePhoneManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCChoosePhoneManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EF2DD3202C52FB00CF3165 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18EF2DD4202C52FB00CF3165 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,8 +69,13 @@
 		18EF2E0C202C535100CF3165 /* JCCustomChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCustomChooseView.m; sourceTree = "<group>"; };
 		18EF2E0D202C535100CF3165 /* JCChoosePhoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCChoosePhoneManager.h; sourceTree = "<group>"; };
 		18EF2E0E202C535100CF3165 /* JCVPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCVPImageCropperViewController.m; sourceTree = "<group>"; };
-		18EF2E14202C536900CF3165 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
-		18EF2E15202C536900CF3165 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		4F9544781FED4366AB5981EB /* libPods-JCChoosePhoneManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCChoosePhoneManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDD49F16A74B72E62BE62AB /* Pods-JCChoosePhoneManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManager/Pods-JCChoosePhoneManager.debug.xcconfig"; sourceTree = "<group>"; };
+		6B99A732BAE93111697F813B /* Pods-JCChoosePhoneManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManagerUITests/Pods-JCChoosePhoneManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		920709B870D41C0D20BD72C5 /* Pods-JCChoosePhoneManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManagerTests/Pods-JCChoosePhoneManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9ED60514530B9DAECFB98FFE /* libPods-JCChoosePhoneManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCChoosePhoneManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4A451259E4B797366C72CA /* libPods-JCChoosePhoneManagerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCChoosePhoneManagerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84E69CAFCE0D679F56D6922 /* Pods-JCChoosePhoneManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCChoosePhoneManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCChoosePhoneManagerUITests/Pods-JCChoosePhoneManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48EDBF704631C2554924AC14 /* libPods-JCChoosePhoneManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72788BC1604B55A122A503DA /* libPods-JCChoosePhoneManagerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9866CFB1ECBE228C012C91C3 /* libPods-JCChoosePhoneManagerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +111,13 @@
 			children = (
 				18EF2DD2202C52FA00CF3165 /* JCChoosePhoneManager */,
 				18EF2E07202C535100CF3165 /* JCChoosePhoneManager */,
-				18EF2E13202C536900CF3165 /* Aspects */,
 				18EF2E06202C535100CF3165 /* JCChoosePhoneView.h */,
 				18EF2E05202C535000CF3165 /* JCChoosePhoneView.m */,
 				18EF2DEB202C52FB00CF3165 /* JCChoosePhoneManagerTests */,
 				18EF2DF6202C52FB00CF3165 /* JCChoosePhoneManagerUITests */,
 				18EF2DD1202C52FA00CF3165 /* Products */,
+				2B18A3CA9AF929208CD8F4A9 /* Pods */,
+				CCF2220CB1F126070E47BA4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,14 +180,27 @@
 			path = JCChoosePhoneManager/JCChoosePhoneManager;
 			sourceTree = "<group>";
 		};
-		18EF2E13202C536900CF3165 /* Aspects */ = {
+		2B18A3CA9AF929208CD8F4A9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				18EF2E14202C536900CF3165 /* Aspects.h */,
-				18EF2E15202C536900CF3165 /* Aspects.m */,
+				4FDD49F16A74B72E62BE62AB /* Pods-JCChoosePhoneManager.debug.xcconfig */,
+				0D8846FC4CAD0A678EDB36DA /* Pods-JCChoosePhoneManager.release.xcconfig */,
+				920709B870D41C0D20BD72C5 /* Pods-JCChoosePhoneManagerTests.debug.xcconfig */,
+				01D748EE043380FE455AC06A /* Pods-JCChoosePhoneManagerTests.release.xcconfig */,
+				6B99A732BAE93111697F813B /* Pods-JCChoosePhoneManagerUITests.debug.xcconfig */,
+				E84E69CAFCE0D679F56D6922 /* Pods-JCChoosePhoneManagerUITests.release.xcconfig */,
 			);
-			name = Aspects;
-			path = JCChoosePhoneManager/Aspects;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCF2220CB1F126070E47BA4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ED60514530B9DAECFB98FFE /* libPods-JCChoosePhoneManager.a */,
+				4F9544781FED4366AB5981EB /* libPods-JCChoosePhoneManagerTests.a */,
+				CA4A451259E4B797366C72CA /* libPods-JCChoosePhoneManagerUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18EF2DFC202C52FB00CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManager" */;
 			buildPhases = (
+				E525968ACDF48E6DD6A35EC3 /* [CP] Check Pods Manifest.lock */,
 				18EF2DCC202C52FA00CF3165 /* Sources */,
 				18EF2DCD202C52FA00CF3165 /* Frameworks */,
 				18EF2DCE202C52FA00CF3165 /* Resources */,
+				4784FE03E91E106D93C144C7 /* [CP] Embed Pods Frameworks */,
+				34A756E0B6E4545816526428 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18EF2DFF202C52FB00CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManagerTests" */;
 			buildPhases = (
+				088529D3807F6B59F38B243F /* [CP] Check Pods Manifest.lock */,
 				18EF2DE4202C52FB00CF3165 /* Sources */,
 				18EF2DE5202C52FB00CF3165 /* Frameworks */,
 				18EF2DE6202C52FB00CF3165 /* Resources */,
+				75FBD34AA795A9414CBE2856 /* [CP] Embed Pods Frameworks */,
+				D54D263F2D21AB5B936C5941 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18EF2E02202C52FB00CF3165 /* Build configuration list for PBXNativeTarget "JCChoosePhoneManagerUITests" */;
 			buildPhases = (
+				D9FCDB00AC248A370297778A /* [CP] Check Pods Manifest.lock */,
 				18EF2DEF202C52FB00CF3165 /* Sources */,
 				18EF2DF0202C52FB00CF3165 /* Frameworks */,
 				18EF2DF1202C52FB00CF3165 /* Resources */,
+				31C5F5895BD14BAC9EAD059E /* [CP] Embed Pods Frameworks */,
+				BAD9E44F7E002B257581CDBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,6 +340,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		088529D3807F6B59F38B243F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCChoosePhoneManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31C5F5895BD14BAC9EAD059E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManagerUITests/Pods-JCChoosePhoneManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34A756E0B6E4545816526428 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManager/Pods-JCChoosePhoneManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4784FE03E91E106D93C144C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManager/Pods-JCChoosePhoneManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75FBD34AA795A9414CBE2856 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManagerTests/Pods-JCChoosePhoneManagerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAD9E44F7E002B257581CDBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManagerUITests/Pods-JCChoosePhoneManagerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D54D263F2D21AB5B936C5941 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JCChoosePhoneManagerTests/Pods-JCChoosePhoneManagerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FCDB00AC248A370297778A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCChoosePhoneManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E525968ACDF48E6DD6A35EC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCChoosePhoneManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18EF2DCC202C52FA00CF3165 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -317,7 +499,6 @@
 				18EF2E11202C535100CF3165 /* JCCustomChooseView.m in Sources */,
 				18EF2E10202C535100CF3165 /* JCChoosePhoneManager.m in Sources */,
 				18EF2DD5202C52FB00CF3165 /* AppDelegate.m in Sources */,
-				18EF2E16202C536900CF3165 /* Aspects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +604,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -471,6 +653,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -478,12 +661,15 @@
 		};
 		18EF2DFD202C52FB00CF3165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FDD49F16A74B72E62BE62AB /* Pods-JCChoosePhoneManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2K494VF76;
 				INFOPLIST_FILE = JCChoosePhoneManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jackie.JCChoosePhoneManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jindashi.sinaFutures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,12 +677,15 @@
 		};
 		18EF2DFE202C52FB00CF3165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D8846FC4CAD0A678EDB36DA /* Pods-JCChoosePhoneManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2K494VF76;
 				INFOPLIST_FILE = JCChoosePhoneManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jackie.JCChoosePhoneManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jindashi.sinaFutures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -504,6 +693,7 @@
 		};
 		18EF2E00202C52FB00CF3165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920709B870D41C0D20BD72C5 /* Pods-JCChoosePhoneManagerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -518,6 +708,7 @@
 		};
 		18EF2E01202C52FB00CF3165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D748EE043380FE455AC06A /* Pods-JCChoosePhoneManagerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +723,7 @@
 		};
 		18EF2E03202C52FB00CF3165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B99A732BAE93111697F813B /* Pods-JCChoosePhoneManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JCChoosePhoneManagerUITests/Info.plist;
@@ -545,6 +737,7 @@
 		};
 		18EF2E04202C52FB00CF3165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84E69CAFCE0D679F56D6922 /* Pods-JCChoosePhoneManagerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JCChoosePhoneManagerUITests/Info.plist;

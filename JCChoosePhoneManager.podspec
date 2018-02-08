@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JCChoosePhoneManager"
-  s.version      = "0.0.4"
+  s.version      = "0.0.6"
   s.summary      = "A Choose Phone Manager."
 
   # This description is used to generate tags and improve search results.
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "Foundation", "UIKit", "AVFoundation", "AssetsLibrary", "MobileCoreServices"
+  s.frameworks = "Foundation", "UIKit", "AVFoundation", "MobileCoreServices"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

@@ -9,7 +9,6 @@
 #import "JCChoosePhoneManager.h"
 #import "AppDelegate.h"
 #import <AVFoundation/AVFoundation.h>
-#import <AssetsLibrary/AssetsLibrary.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "JCVPImageCropperViewController.h"
 #import "Aspects.h"
