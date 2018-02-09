@@ -7,11 +7,11 @@
 //
 
 #import "JCChoosePhoneManager.h"
-//#import "AppDelegate.h"
+#import "AppDelegate.h"
 #import <AVFoundation/AVFoundation.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "JCVPImageCropperViewController.h"
-#import <Aspects.h>
+//#import <Aspects.h>
 
 @interface JCChoosePhoneManager ()
   <UIActionSheetDelegate,
