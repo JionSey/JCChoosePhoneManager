@@ -25,7 +25,7 @@
     
     [self.view addSubview:self.choosePhoneView];
     
-    // 设置自定义选择框(不设置则为系统)
+    // 设置自定义选择框 父视图
     [[JCChoosePhoneManager showChoosePhoneManager] configCustomChooseView:self.customChooseView superView:self.view];
     
     // 举例视图

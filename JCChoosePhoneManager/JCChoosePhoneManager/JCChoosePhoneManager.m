@@ -60,32 +60,32 @@ static id _getChoosePhoneManagerInstance;
     
     __block JCChooseGetPhotoType chooseGetPhotoType = JCChooseGetPhotoCancelType;
     __weak typeof(self)  weakSelf   = self;
-//    if (!NSClassFromString(@"XCTestCase")) {
-//        [self.customChooseView aspect_hookSelector:NSSelectorFromString(@"chooseCamera") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> info) {
-//            chooseGetPhotoType = JCChooseGetPhotoCameraType;
-//            [weakSelf paiZhao];
-//            [weakSelf.customChooseView dissmiss];
-//            if (weakSelf.chooseGetPhotoWayOfAct) {
-//                weakSelf.chooseGetPhotoWayOfAct(chooseGetPhotoType);
-//            }
-//        } error:NULL];
-//
-//        [self.customChooseView aspect_hookSelector:NSSelectorFromString(@"choosePhoto") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> info) {
-//            chooseGetPhotoType = JCChooseGetPhotoPhotosType;
-//            [weakSelf xiangCe];
-//            [weakSelf.customChooseView dissmiss];
-//            if (weakSelf.chooseGetPhotoWayOfAct) {
-//                weakSelf.chooseGetPhotoWayOfAct(chooseGetPhotoType);
-//            }
-//        } error:NULL];
-//
-//        [self.customChooseView aspect_hookSelector:NSSelectorFromString(@"cencleChoose") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> info) {
-//            [weakSelf.customChooseView dissmiss];
-//            if (weakSelf.chooseGetPhotoWayOfAct) {
-//                weakSelf.chooseGetPhotoWayOfAct(chooseGetPhotoType);
-//            }
-//        } error:NULL];
-//    }
+    if (!NSClassFromString(@"XCTestCase")) {
+        [self.customChooseView aspect_hookSelector:NSSelectorFromString(@"chooseCamera") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> info) {
+            chooseGetPhotoType = JCChooseGetPhotoCameraType;
+            [weakSelf paiZhao];
+            [weakSelf.customChooseView dissmiss];
+            if (weakSelf.chooseGetPhotoWayOfAct) {
+                weakSelf.chooseGetPhotoWayOfAct(chooseGetPhotoType);
+            }
+        } error:NULL];
+
+        [self.customChooseView aspect_hookSelector:NSSelectorFromString(@"choosePhoto") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> info) {
+            chooseGetPhotoType = JCChooseGetPhotoPhotosType;
+            [weakSelf xiangCe];
+            [weakSelf.customChooseView dissmiss];
+            if (weakSelf.chooseGetPhotoWayOfAct) {
+                weakSelf.chooseGetPhotoWayOfAct(chooseGetPhotoType);
+            }
+        } error:NULL];
+
+        [self.customChooseView aspect_hookSelector:NSSelectorFromString(@"cencleChoose") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> info) {
+            [weakSelf.customChooseView dissmiss];
+            if (weakSelf.chooseGetPhotoWayOfAct) {
+                weakSelf.chooseGetPhotoWayOfAct(chooseGetPhotoType);
+            }
+        } error:NULL];
+    }
 }
 
 - (void)starToChooseThePhoneWithCurrentVC:(UIViewController *)currentVC
