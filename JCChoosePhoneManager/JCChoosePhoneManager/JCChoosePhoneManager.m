@@ -7,7 +7,6 @@
 //
 
 #import "JCChoosePhoneManager.h"
-//#import "AppDelegate.h"
 #import <AVFoundation/AVFoundation.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "JCVPImageCropperViewController.h"
@@ -23,6 +22,7 @@
 @property (nonatomic, assign) JCChoosePhoneManagerSetType type;
 @property (nonatomic, assign) JCChooseViewType chooseViewType;
 @property (nonatomic, strong) UIView <JCCustomChooseProtocol> *customChooseView;
+@property (nonatomic, strong) UIView *superView;
 
 @end
 
@@ -48,17 +48,18 @@ static id _getChoosePhoneManagerInstance;
     return self;
 }
 
-- (void)configCustomChooseView:(UIView <JCCustomChooseProtocol> *)customChooseView {
+- (void)configCustomChooseView:(UIView <JCCustomChooseProtocol> *)customChooseView superView:(UIView *)superView {
     
     self.customChooseView = customChooseView;
-    self.chooseViewType  = JCChooseCustomViewType;
+    self.superView        = superView;
+    self.chooseViewType   = JCChooseCustomViewType;
     [self setCustomChooseHook];
 }
 
 - (void)setCustomChooseHook {
     
-//    __block JCChooseGetPhotoType chooseGetPhotoType = JCChooseGetPhotoCancelType;
-//    __weak typeof(self)  weakSelf   = self;
+    __block JCChooseGetPhotoType chooseGetPhotoType = JCChooseGetPhotoCancelType;
+    __weak typeof(self)  weakSelf   = self;
 //    if (!NSClassFromString(@"XCTestCase")) {
 //        [self.customChooseView aspect_hookSelector:NSSelectorFromString(@"chooseCamera") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> info) {
 //            chooseGetPhotoType = JCChooseGetPhotoCameraType;
@@ -97,15 +98,15 @@ static id _getChoosePhoneManagerInstance;
         [sheet showInView:[UIApplication sharedApplication].windows[0]];
     } else {
         
-//        UIView <JCCustomChooseProtocol>   *customChooseView = [((AppDelegate *) [UIApplication sharedApplication].delegate).window viewWithTag:777];
-//        if (customChooseView) {
-//            [customChooseView removeFromSuperview];
-//            customChooseView = nil;
-//        }
-//        [((AppDelegate *) [UIApplication sharedApplication].delegate).window addSubview:self.customChooseView];
-//        self.customChooseView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-//        self.customChooseView.tag = 777;
-//        [self.customChooseView show];
+        UIView <JCCustomChooseProtocol>   *customChooseView = [self.superView viewWithTag:777];
+        if (customChooseView) {
+            [customChooseView removeFromSuperview];
+            customChooseView = nil;
+        }
+        [self.superView addSubview:self.customChooseView];
+        self.customChooseView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+        self.customChooseView.tag = 777;
+        [self.customChooseView show];
     }
 }
 
@@ -144,62 +145,62 @@ static id _getChoosePhoneManagerInstance;
 
 - (void)paiZhao {
     
-//    if ([self isPhotoLibraryAvailable]) {
-//        [self goToTheCamera];
-//    }
+    if ([self isPhotoLibraryAvailable]) {
+        [self goToTheCamera];
+    }
 }
 
 - (void)goToTheCamera {
     
-//    UIImagePickerController *controller = [[UIImagePickerController alloc] init];
-//    controller.sourceType = UIImagePickerControllerSourceTypeCamera;
-//    if ([self isFrontCameraAvailable]) {
-//        controller.cameraDevice = UIImagePickerControllerCameraDeviceFront;
-//    }
-//    NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
-//    [mediaTypes addObject:(__bridge NSString *) kUTTypeImage];
-//    controller.mediaTypes = mediaTypes;
-//    controller.delegate = self;
-//    [self.currentVC presentViewController:controller
-//                       animated:YES
-//                     completion:^(void) {
-//                         NSLog(@"Picker View Controller is presented");
-//                     }];
+    UIImagePickerController *controller = [[UIImagePickerController alloc] init];
+    controller.sourceType = UIImagePickerControllerSourceTypeCamera;
+    if ([self isFrontCameraAvailable]) {
+        controller.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+    }
+    NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
+    [mediaTypes addObject:(__bridge NSString *) kUTTypeImage];
+    controller.mediaTypes = mediaTypes;
+    controller.delegate = self;
+    [self.currentVC presentViewController:controller
+                       animated:YES
+                     completion:^(void) {
+                         NSLog(@"Picker View Controller is presented");
+                     }];
 }
 
 - (void)xiangCe {
     
-//    // 相册
-//    if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0&&[[[UIDevice currentDevice] systemVersion] floatValue]<8.0? YES : NO)) {
-//        AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-//        if (authStatus != AVAuthorizationStatusAuthorized) {
-//            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"无法使用相机" message:@"请在iPhone的\"设置-隐私-相机\"中允许访问相机" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确认", nil];
-//            [alertView show];
-//            return;
-//        }
-//    }
-//
-//    if ([self isCameraAvailable] && [self doesCameraSupportTakingPhotos]) {
-//        [self goToPhoto];
-//    }
+    // 相册
+    if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0&&[[[UIDevice currentDevice] systemVersion] floatValue]<8.0? YES : NO)) {
+        AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+        if (authStatus != AVAuthorizationStatusAuthorized) {
+            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"无法使用相机" message:@"请在iPhone的\"设置-隐私-相机\"中允许访问相机" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确认", nil];
+            [alertView show];
+            return;
+        }
+    }
+
+    if ([self isCameraAvailable] && [self doesCameraSupportTakingPhotos]) {
+        [self goToPhoto];
+    }
 }
 
 - (void)goToPhoto {
     
-//    UIImagePickerController *controller = [[UIImagePickerController alloc] init];
-//    controller.navigationController.delegate = self;
-//    controller.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-//    NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
-//    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]}];
-//    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-//    [mediaTypes addObject:(__bridge NSString *)kUTTypeImage];
-//    controller.mediaTypes = mediaTypes;
-//    controller.delegate = self;
-//    [self.currentVC presentViewController:controller
-//                                            animated:YES
-//                                          completion:^(void) {
-//
-//                                          }];
+    UIImagePickerController *controller = [[UIImagePickerController alloc] init];
+    controller.navigationController.delegate = self;
+    controller.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [mediaTypes addObject:(__bridge NSString *)kUTTypeImage];
+    controller.mediaTypes = mediaTypes;
+    controller.delegate = self;
+    [self.currentVC presentViewController:controller
+                                            animated:YES
+                                          completion:^(void) {
+
+                                          }];
 }
 
 #pragma mark - UIImagePickerControllerDelegate
@@ -212,33 +213,33 @@ static id _getChoosePhoneManagerInstance;
         [self.customChooseView dissmiss];
     }
     
-//    [picker dismissViewControllerAnimated:YES completion:^{
-//        if (weakSelf.type == JCChoosePhoneNoOptimizeNoVPImageType)
-//        {
-//            if (weakSelf.chooseImage) {
-//                weakSelf.chooseImage(img);
-//            }
-//            [weakSelf.chooseImagesArray addObject:img];
-//        } else if (weakSelf.type == JCChoosePhoneNoOptimizeHaveVPImageType) {
-//            JCVPImageCropperViewController *imgEditorVC = [[JCVPImageCropperViewController alloc] initWithImage:img cropFrame:CGRectMake(0, 100.0f, weakSelf.currentVC.view.frame.size.width, weakSelf.currentVC.view.frame.size.width) limitScaleRatio:3.0];
-//            imgEditorVC.delegate = weakSelf;
-//            imgEditorVC.SourceType=picker.sourceType;
-//            [weakSelf.currentVC presentViewController:imgEditorVC animated:YES completion:^{
-//            }];
-//        } else if (weakSelf.type == JCChoosePhoneHaveOptimizeNoVPImageType) {
-//            if (weakSelf.chooseImage) {
-//                weakSelf.chooseImage([weakSelf imageByScalingToMaxSize:img]);
-//            }
-//            [weakSelf.chooseImagesArray addObject:[weakSelf imageByScalingToMaxSize:img]];
-//        } else {
-//            JCVPImageCropperViewController *imgEditorVC = [[JCVPImageCropperViewController alloc] initWithImage:[weakSelf imageByScalingToMaxSize:img] cropFrame:CGRectMake(0, 100.0f, weakSelf.currentVC.view.frame.size.width, weakSelf.currentVC.view.frame.size.width) limitScaleRatio:3.0];
-//            imgEditorVC.delegate = weakSelf;
-//            imgEditorVC.SourceType=picker.sourceType;
-//            [weakSelf.currentVC presentViewController:imgEditorVC animated:YES completion:^{
-//                // TO DO
-//            }];
-//        }
-//    }];
+    [picker dismissViewControllerAnimated:YES completion:^{
+        if (weakSelf.type == JCChoosePhoneNoOptimizeNoVPImageType)
+        {
+            if (weakSelf.chooseImage) {
+                weakSelf.chooseImage(img);
+            }
+            [weakSelf.chooseImagesArray addObject:img];
+        } else if (weakSelf.type == JCChoosePhoneNoOptimizeHaveVPImageType) {
+            JCVPImageCropperViewController *imgEditorVC = [[JCVPImageCropperViewController alloc] initWithImage:img cropFrame:CGRectMake(0, 100.0f, weakSelf.currentVC.view.frame.size.width, weakSelf.currentVC.view.frame.size.width) limitScaleRatio:3.0];
+            imgEditorVC.delegate = weakSelf;
+            imgEditorVC.SourceType=picker.sourceType;
+            [weakSelf.currentVC presentViewController:imgEditorVC animated:YES completion:^{
+            }];
+        } else if (weakSelf.type == JCChoosePhoneHaveOptimizeNoVPImageType) {
+            if (weakSelf.chooseImage) {
+                weakSelf.chooseImage([weakSelf imageByScalingToMaxSize:img]);
+            }
+            [weakSelf.chooseImagesArray addObject:[weakSelf imageByScalingToMaxSize:img]];
+        } else {
+            JCVPImageCropperViewController *imgEditorVC = [[JCVPImageCropperViewController alloc] initWithImage:[weakSelf imageByScalingToMaxSize:img] cropFrame:CGRectMake(0, 100.0f, weakSelf.currentVC.view.frame.size.width, weakSelf.currentVC.view.frame.size.width) limitScaleRatio:3.0];
+            imgEditorVC.delegate = weakSelf;
+            imgEditorVC.SourceType=picker.sourceType;
+            [weakSelf.currentVC presentViewController:imgEditorVC animated:YES completion:^{
+                // TO DO
+            }];
+        }
+    }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
@@ -251,21 +252,20 @@ static id _getChoosePhoneManagerInstance;
 }
 
 // VPImageCropperDelegate
-//- (void)imageCropper:(JCVPImageCropperViewController *)cropperViewController didFinished:(UIImage *)editedImage {
-//
-//    if (self.chooseImage) {
-//        self.chooseImage(editedImage);
-//    }
-//    [cropperViewController dismissViewControllerAnimated:YES completion:^{
-//    }];
-//}
-//
-//- (void)imageCropperDidCancel:(JCVPImageCropperViewController *)cropperViewController {
-//
-//    [cropperViewController dismissViewControllerAnimated:YES completion:^{
-//    }];
-//}
+- (void)imageCropper:(JCVPImageCropperViewController *)cropperViewController didFinished:(UIImage *)editedImage {
 
+    if (self.chooseImage) {
+        self.chooseImage(editedImage);
+    }
+    [cropperViewController dismissViewControllerAnimated:YES completion:^{
+    }];
+}
+
+- (void)imageCropperDidCancel:(JCVPImageCropperViewController *)cropperViewController {
+
+    [cropperViewController dismissViewControllerAnimated:YES completion:^{
+    }];
+}
 
 #pragma mark camera utility
 
@@ -281,24 +281,24 @@ static id _getChoosePhoneManagerInstance;
     return [UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceFront];
 }
 
-//- (BOOL)doesCameraSupportTakingPhotos {
-//    return [self cameraSupportsMedia:(__bridge NSString *) kUTTypeImage sourceType:UIImagePickerControllerSourceTypeCamera];
-//}
-//
-//- (BOOL) isPhotoLibraryAvailable{
-//    return [UIImagePickerController isSourceTypeAvailable:
-//            UIImagePickerControllerSourceTypePhotoLibrary];
-//}
-//
-//- (BOOL)canUserPickVideosFromPhotoLibrary {
-//    return [self
-//            cameraSupportsMedia:(__bridge NSString *) kUTTypeMovie sourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-//}
-//
-//- (BOOL)canUserPickPhotosFromPhotoLibrary {
-//    return [self
-//            cameraSupportsMedia:(__bridge NSString *) kUTTypeImage sourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-//}
+- (BOOL)doesCameraSupportTakingPhotos {
+    return [self cameraSupportsMedia:(__bridge NSString *) kUTTypeImage sourceType:UIImagePickerControllerSourceTypeCamera];
+}
+
+- (BOOL) isPhotoLibraryAvailable{
+    return [UIImagePickerController isSourceTypeAvailable:
+            UIImagePickerControllerSourceTypePhotoLibrary];
+}
+
+- (BOOL)canUserPickVideosFromPhotoLibrary {
+    return [self
+            cameraSupportsMedia:(__bridge NSString *) kUTTypeMovie sourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+}
+
+- (BOOL)canUserPickPhotosFromPhotoLibrary {
+    return [self
+            cameraSupportsMedia:(__bridge NSString *) kUTTypeImage sourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+}
 
 - (BOOL)cameraSupportsMedia:(NSString *)paramMediaType sourceType:(UIImagePickerControllerSourceType)paramSourceType {
     __block BOOL result = NO;

@@ -68,7 +68,7 @@ typedef void(^JCCancelChooseImage)(void);
  *
  *  @param customChooseView 自定义的选取视图
  */
-- (void)configCustomChooseView:(UIView <JCCustomChooseProtocol> *)customChooseView;
+- (void)configCustomChooseView:(UIView <JCCustomChooseProtocol> *)customChooseView superView:(UIView *)superView;
 
 /**
  *  @author XiaoJianJie, 16-06-30 17:06:00
