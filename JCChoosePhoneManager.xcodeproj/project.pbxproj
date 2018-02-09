@@ -168,13 +168,13 @@
 		18EF2E07202C535100CF3165 /* JCChoosePhoneManager */ = {
 			isa = PBXGroup;
 			children = (
-				18EF2E08202C535100CF3165 /* JCChoosePhoneManager.m */,
-				18EF2E09202C535100CF3165 /* JCCustomChooseView.h */,
 				18EF2E0A202C535100CF3165 /* JCCustomChooseProtocol.h */,
 				18EF2E0B202C535100CF3165 /* JCVPImageCropperViewController.h */,
+				18EF2E0E202C535100CF3165 /* JCVPImageCropperViewController.m */,
+				18EF2E09202C535100CF3165 /* JCCustomChooseView.h */,
 				18EF2E0C202C535100CF3165 /* JCCustomChooseView.m */,
 				18EF2E0D202C535100CF3165 /* JCChoosePhoneManager.h */,
-				18EF2E0E202C535100CF3165 /* JCVPImageCropperViewController.m */,
+				18EF2E08202C535100CF3165 /* JCChoosePhoneManager.m */,
 			);
 			name = JCChoosePhoneManager;
 			path = JCChoosePhoneManager/JCChoosePhoneManager;
@@ -557,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -613,6 +614,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

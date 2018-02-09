@@ -11,9 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "JCVPImageCropperViewController.h"
-#import "Aspects.h"
-
-#define ORIGINAL_MAX_WIDTH 640.0f
+#import <Aspects.h>
 
 @interface JCChoosePhoneManager ()
   <UIActionSheetDelegate,

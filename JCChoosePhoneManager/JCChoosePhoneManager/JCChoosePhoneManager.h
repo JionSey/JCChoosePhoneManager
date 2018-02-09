@@ -46,10 +46,11 @@ typedef void (^JCChooseGetPhotoWayOfAct)(JCChooseGetPhotoType type);
 typedef void(^JCChooseImage)(UIImage *image);
 
 //取消选择图片
-typedef void(^JCCancelChooseImage)();
+typedef void(^JCCancelChooseImage)(void);
 
 //TODO: 此处值需要修改称app的名字(默认为app名字)
 #define __ProjectName__ [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
+#define ORIGINAL_MAX_WIDTH 640.0f
 
 @interface JCChoosePhoneManager : NSObject
 
