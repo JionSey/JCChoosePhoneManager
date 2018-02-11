@@ -667,11 +667,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2K494VF76;
+				DEVELOPMENT_TEAM = QK99ER5X78;
 				INFOPLIST_FILE = JCChoosePhoneManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jindashi.sinaFutures;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JinCe.JinceDistribution;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -683,11 +683,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2K494VF76;
+				DEVELOPMENT_TEAM = QK99ER5X78;
 				INFOPLIST_FILE = JCChoosePhoneManager/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jindashi.sinaFutures;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JinCe.JinceDistribution;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

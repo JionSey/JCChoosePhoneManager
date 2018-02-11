@@ -66,7 +66,7 @@
                 break;
         }
         
-        [[JCChoosePhoneManager showChoosePhoneManager]starToChooseThePhoneWithCurrentVC:weakSelf type:choosePhoneManagerSetType];
+        [[JCChoosePhoneManager showChoosePhoneManager] starToChooseThePhoneWithCurrentVC:weakSelf type:choosePhoneManagerSetType];
     };
 }
 
