@@ -1,5 +1,9 @@
 # JCChoosePhoneManager
 
+###### 通常项目都有用户中心选取头像功能，为了可以减少开发量并组件化，书写了该控件。大家可以通过pod直接导入。或者通过git地址下载测试demo进行相关调试。
+###### pod：pod 'JCChoosePhoneManager'
+###### 传送门: [git地址](https://github.com/JionSey/JCChoosePhoneManager)
+
 ###1.架构组成及部分功能代码介绍
 
 * JCCustomChooseProtocol         控件协议
